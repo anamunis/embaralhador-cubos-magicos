@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+.gerador {
+    background: #1f2937;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #374151;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #4b5563;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.resultado {
+    margin-top: 30px;
+    padding: 20px;
+    background: #111827;
+    border-radius: 10px;
+}
+
+.resultado h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#sequencia {
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    min-height: 70px;
+}
+
+#contador {
+    color: #9ca3af;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.secundario {
+    background: #374151;
+    margin-top: 5px;
+}
+
+.secundario:hover {
+    background: #4b5563;
+}
+
+#mensagem {
+    margin-top: 15px;
+    color: #34d399;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 25px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .gerador {
+        padding: 20px;
+    }
+
+    #sequencia {
+        font-size: 19px;
+    }
+}

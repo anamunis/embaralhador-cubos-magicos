@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cubos Mágicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Gerador de Cubos Mágicos</h1>
+            <p>Gere scrambles para treinar suas resoluções.</p>
+        </header>
+
+        <section class="gerador">
+
+            <label for="tipoCubo">Escolha o tamanho do cubo</label>
+
+            <select id="tipoCubo">
+                <option value="2x2">2x2</option>
+                <option value="3x3" selected>3x3</option>
+                <option value="4x4">4x4</option>
+                <option value="5x5">5x5</option>
+            </select>
+
+            <button id="btnEmbaralhar">
+                Embaralhar
+            </button>
+
+            <div class="resultado">
+                <h2>Seu scramble</h2>
+
+                <div id="sequencia">
+                    Clique em Embaralhar para começar.
+                </div>
+
+                <p id="contador">0 movimentos</p>
+
+                <button id="btnCopiar" class="secundario">
+                    Copiar sequência
+                </button>
+            </div>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+        <footer>
+            Gerador de Cubos Mágicos
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
