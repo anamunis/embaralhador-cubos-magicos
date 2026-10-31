@@ -13,10 +13,29 @@ O projeto permite gerar sequências aleatórias de movimentos para praticar a re
   - 4x4: 40 movimentos.
   - 5x5: 60 movimentos.
 - Movimentos básicos: R, L, U, D, F e B.
+- Movimentos de camadas internas para cubos 4x4 e 5x5: r, l, u, d, f e b.
 - Movimentos anti-horários representados por apóstrofo (').
 - Movimentos de 180° representados pela repetição do movimento (exemplo: R R).
 - Opção para copiar a sequência gerada.
 - Interface adaptável para computadores e dispositivos móveis.
+- Exibição de uma observação sobre os movimentos de camadas internas ao selecionar cubos 4x4 ou 5x5.
+
+## Notação dos movimentos
+
+| Notação | Movimento |
+|---|---|
+| R | Direita |
+| L | Esquerda |
+| U | Superior |
+| D | Inferior |
+| F | Frontal |
+| B | Traseira |
+| r | Segunda camada da direita |
+| l | Segunda camada da esquerda |
+| u | Segunda camada superior |
+| d | Segunda camada inferior |
+| f | Segunda camada frontal |
+| b | Segunda camada traseira |
 
 ## Tecnologias
 
