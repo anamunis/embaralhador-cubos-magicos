@@ -6,8 +6,41 @@ const quantidades = {
     "5x5": 60
 };
 
-const movimentos = ["R", "L", "U", "D", "F", "B"];
+
+const movimentos = {
+    "2x2": ["R", "L", "U", "D", "F", "B"],
+
+    "3x3": ["R", "L", "U", "D", "F", "B"],
+
+    "4x4": [
+        "R", "L", "U", "D", "F", "B",
+        "r", "l", "u", "d", "f", "b"
+    ],
+
+    "5x5": [
+        "R", "L", "U", "D", "F", "B",
+        "r", "l", "u", "d", "f", "b"
+    ]
+};
+
 const sufixos = ["", "'"];
+
+// Observação para cubos 4x4 e 5x5
+function atualizarObservacao() {
+
+    const tipo = document.getElementById("tipoCubo").value;
+    const observacao = document.getElementById("observacao");
+
+    if (tipo === "4x4" || tipo === "5x5") {
+
+        observacao.textContent =
+            "Atenção: letras minúsculas representam movimentos exclusivos da segunda camada, sem movimentar a face externa.";
+
+    } else {
+
+        observacao.textContent = "";
+    }
+}
 
 // Gera o embaralhamento
 function gerarScramble(tipo) {
@@ -20,7 +53,7 @@ function gerarScramble(tipo) {
     while (scramble.length < quantidade) {
 
         // Escolhe uma face diferente da anterior
-        const opcoes = movimentos.filter(
+        const opcoes = movimentos[tipo].filter(
             movimento => movimento !== movimentoAnterior
         );
 
@@ -67,6 +100,13 @@ document.getElementById("btnEmbaralhar")
 
         document.getElementById("mensagem").textContent = "";
     });
+
+
+document.getElementById("tipoCubo")
+    .addEventListener("change", atualizarObservacao);
+
+// Atualiza a observação inicial
+atualizarObservacao();
 
 // Botão Copiar
 document.getElementById("btnCopiar")
